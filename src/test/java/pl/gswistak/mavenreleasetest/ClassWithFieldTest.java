@@ -3,6 +3,8 @@ package pl.gswistak.mavenreleasetest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.Serializable;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ClassWithFieldTest {
@@ -27,5 +29,11 @@ class ClassWithFieldTest {
         classWithField.setField(CHANGED_FIELD_VALUE);
 
         assertEquals(CHANGED_FIELD_VALUE, classWithField.getField());
+    }
+
+    @Test
+    void shouldImplementSerializable() {
+
+        assertTrue(classWithField instanceof Serializable);
     }
 }

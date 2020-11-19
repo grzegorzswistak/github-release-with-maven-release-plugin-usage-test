@@ -1,6 +1,9 @@
 package pl.gswistak.mavenreleasetest;
 
-public class ClassWithField {
+import java.io.Serializable;
+
+public class ClassWithField implements Serializable {
+
     private String field;
 
     public ClassWithField(String field) {
