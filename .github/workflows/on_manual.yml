@@ -17,7 +17,7 @@ jobs:
           git-release-bot-name: "bot"
           git-release-bot-email: "grzegorz.swistak2@gmail.com"
           skip-perform: true
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Get the last tag name to set as version
         id: get_version
