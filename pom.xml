@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>pl.gswistak</groupId>
     <artifactId>mvn-release-test</artifactId>
-    <version>0.0.16</version>
+    <version>0.0.16-SNAPSHOT</version>
     <build>
         <plugins>
             <plugin>
